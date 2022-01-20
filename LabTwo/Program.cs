@@ -13,7 +13,7 @@ namespace LabTwo
             StockItem milk = new StockItem("1 Gallon of Milk", 3.60f, 15);
             StockItem bread = new StockItem("1 Loaf of Bread", 1.98f, 30);
 
-            int choice = 8;
+            int choice;
             do
             {
                 Console.WriteLine("1. Sold One Milk");
@@ -36,36 +36,36 @@ namespace LabTwo
                 }
                 else if (choice == 3)
                 {
-                    Console.Write("Please enter a new price");
+                    Console.Write("Please enter a new price: ");
                     float price = float.Parse(Console.ReadLine());
 
                     milk.setPrice(price);
                 }
                 else if (choice == 4)
                 {
-                    Console.Write("Please enter a new price");
+                    Console.Write("Please enter a new price: ");
                     float price = float.Parse(Console.ReadLine());
 
                     bread.setPrice(price);
                 }
                 else if (choice == 5)
                 {
-                    Console.Write("Please enter the quantity to add");
+                    Console.Write("Please enter the quantity to add: ");
                     int quantirty = Int32.Parse(Console.ReadLine());
 
                     milk.raiseQuantity(quantirty);
                 }
                 else if (choice == 6)
                 {
-                    Console.Write("Please enter the quantity to add");
+                    Console.Write("Please enter the quantity to add: ");
                     int quantirty = Int32.Parse(Console.ReadLine());
 
                     bread.raiseQuantity(quantirty);
                 }
                 else if (choice == 7)
                 {
-                    milk.ToString();
-                    bread.ToString();
+                    Console.WriteLine(milk);
+                    Console.WriteLine(bread);
                 }
 
             } while (choice != 8);
