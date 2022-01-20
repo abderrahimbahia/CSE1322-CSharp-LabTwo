@@ -8,7 +8,8 @@ namespace LabTwo
     {
 
         private string description;
-        public static int id;
+        private int id;
+        private static int nextId = 0;
         private float price;
         private int quantity;
 
@@ -16,10 +17,10 @@ namespace LabTwo
         public StockItem()
         {
             description = "No description provided";
-            id = 1;
-            id++;
             price = 0;
-            quantity = 1;
+            quantity = 0;
+            id = nextId;
+            nextId++;
         }
 
 
@@ -28,8 +29,8 @@ namespace LabTwo
             this.description = description;
             this.price = price;
             this.quantity = quantity;
-            id = 1;
-            id++;
+            this.id = nextId;
+            nextId++;
 
         }
 
@@ -84,10 +85,10 @@ namespace LabTwo
 
         public override string ToString()
         {
-            return "Item Description: " + description +
-                   "Item ID: " + id +
-                   "Item Quantity: " + quantity +
-                   "Item Price: " + price;
+            return "Item Number: " + id +
+                   " is " + description +
+                   " has price $" + price +
+                   " we currently have " + price + " in stock ";
         }
 
 

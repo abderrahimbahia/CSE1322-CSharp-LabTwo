@@ -63,8 +63,8 @@ namespace LabTwo
                 }
                 else if (choice == 7)
                 {
-                    Console.WriteLine(milk);
-                    Console.WriteLine(bread);
+                    Console.WriteLine("Milk: " + milk);
+                    Console.WriteLine("Bread: " + bread);
                 }
 
             } while (choice != 8);
