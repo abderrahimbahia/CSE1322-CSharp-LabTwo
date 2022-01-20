@@ -1,5 +1,4 @@
 ﻿//Programmer: Abderrahim Bahia
-//Overview: StockItem is a class used to track items in a stock at a store
 //Last Update: 01/19/2022
 
 using System;
