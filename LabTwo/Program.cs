@@ -1,5 +1,4 @@
 ﻿//Programmer: Abderrahim Bahia
-//Overview: Driver program applies StockItem program to a Milk and Bread Store
 //Last Update: 01/19/2022
 
 using System;
