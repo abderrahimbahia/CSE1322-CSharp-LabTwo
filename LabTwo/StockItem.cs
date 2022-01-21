@@ -16,7 +16,7 @@ namespace LabTwo
 
         public StockItem()
         {
-            description = "No description provided";
+            description = "";
             price = 0;
             quantity = 0;
             id = nextId;
